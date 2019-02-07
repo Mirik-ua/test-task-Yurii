@@ -1,0 +1,220 @@
+body{
+  background: #000;
+  font-family: Arial, sans-serif;
+}
+.top_line{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 10px;
+}
+/* start big block */
+.top_line .main_block{
+  border: 1px solid #984825;
+  border-radius: 15px;
+  color: #fff;
+  background: #111;
+  max-height: 300px;
+}
+.top_line .main_block .top_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 35%;
+}
+.top_line .main_block .img_block img{
+  margin-top: -1px;
+  border-radius: 12px;
+}
+.top_line .main_block .item_block{
+  margin-left: 25%;
+  margin-top: 10px;
+}
+.top_line .main_block .date{
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
+}
+.top_line .main_block .item_block img{
+  width: 70%;
+}
+.top_line .main_block .time_block{
+  display: grid;
+  text-align: center;
+  align-content: center;
+  height: 40%;
+  font-size: 4.2vw;
+  font-weight: bold;
+}
+.top_line .main_block .master_block{
+  display: grid;
+  justify-content: center;
+  margin-top: 3.3vw;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* end big block */
+
+.top_line .first_top_small_block{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  box-sizing: border-box;
+  height: 160px;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  margin-left: -10px;
+}
+.top_line .first_bot_small_block{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  box-sizing: border-box;
+  height: 160px;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  margin-left: -10px;
+}
+.wrapper .first_block{
+  border: 1px solid #984825;
+  height: 85%;
+  border-radius: 10px;
+}
+.top_wrapper .first_block span{
+  color: #fff;
+  font-size: 2vw;
+}
+.wrapper .second_block{
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #7f7f7f;
+}
+.wrapper_white .second_block{
+  color: #fff;
+}
+.top_wrapper .first_block{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.top_line .top_wrapper .termo img{
+  width: 80%;
+  height:70%;
+}
+.top_line .top_wrapper .formul img{
+  width: 80%;
+  height: 80%;
+  margin-left: 5px;
+}
+.top_line .top_wrapper .drop img{
+  width: 110%;
+  height:70%;
+  margin: 5px;
+}
+.top_line .top_wrapper .prob img{
+  width: 80%;
+  height: 80%;
+}
+.top_line .top_wrapper .o2 img{
+  width: 100%;
+  height: 60%;
+}
+.top_line .top_wrapper .image_block{
+  width: 75%;
+  height: 90%;
+  margin: 5px;
+  grid-row: 1/-1;
+}
+.top_line .top_wrapper .right_block{
+  font-weight: bold;
+  display:grid;
+  justify-self: end;
+  margin-right: 10px;
+}
+.top_line .top_wrapper .bot{
+  font-weight: bold;
+  display:grid;
+  justify-self: end;
+  align-self: end;
+}
+.top_line .wrapper_full_img .first_block img{
+  width: 95%;
+  height: 70%;
+  margin: 5% 0 0 2%;
+  border-radius: 10px;
+}
+/* start bottom section */
+.bot_line{
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+}
+.wrapper_for_top_small_block2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.bot_line .second_top_small_block{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  height: 160px;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+  border-radius: 15px;
+}
+.bot_line .second_bot_small_block{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  height: 160px;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+  border-radius: 15px;
+}
+.bot_line .wrapper .first_block img{
+  width: 40%;
+  height: 50%;
+  margin: 15px;
+}
+.bot_line .wrapper_flash .first_block img{
+  width: 30%;
+  height: 60%;
+  margin:  10px 0 0 20%;
+}
+.bot_line .wrapper_white .first_block{
+  border: 1px solid #984825;
+  height: 85%;
+  border-radius: 10px;
+}
+.bot_line .wrapper_white .first_block img{
+  height: 55%;
+  width: 55%;
+  margin: 10px 0 0 5%;
+}
+.bot_line .wrapper_white span{
+  color: #fff;
+}
+.bot_line .wrapper_last .first_block img{
+  height: 55%;
+  width: 65%;
+  margin-left: 1px;
+}
+/* media query for device */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .top_line{
+      grid-template-columns: 1fr;
+      width: 80%;
+      margin-left: 10%;
+      }
+    .top_line .main_block .top_wrapper{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    .top_line .main_block .top_wrapper .date_block{
+      justify-self: start;
+      margin-left: -5%;
+    }
+    .bot_line{
+      width: 80%;
+      margin-left: 10%;
+      }
+}
